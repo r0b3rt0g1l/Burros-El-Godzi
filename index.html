@@ -1076,7 +1076,23 @@ letter-spacing: 1px; text-decoration: none;
     saveCart();
     renderCart();
     showToast('\u00A1Pedido enviado! Abre WhatsApp para confirmar.', 'success');
-    window.location.href = 'https://wa.me/526623866834?text=' + encodeURIComponent(msg);
+
+    var waUrl = 'https://wa.me/526623866834?text=' + encodeURIComponent(msg);
+
+    /* En el navegador interno de Instagram (iOS) los deep links de WhatsApp
+       quedan bloqueados. Creamos un enlace temporal con target="_blank" para
+       que iOS lo pase a Safari, donde el redirect a WhatsApp sí funciona. */
+    if (/Instagram/i.test(navigator.userAgent)) {
+      var enlace = document.createElement('a');
+      enlace.href = waUrl;
+      enlace.target = '_blank';
+      enlace.rel = 'noopener noreferrer';
+      document.body.appendChild(enlace);
+      enlace.click();
+      document.body.removeChild(enlace);
+    } else {
+      window.location.href = waUrl;
+    }
   }
 
   if (sendBtn) sendBtn.addEventListener('click', sendWhatsApp);
