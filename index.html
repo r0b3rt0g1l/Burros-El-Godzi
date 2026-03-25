@@ -30,8 +30,8 @@ html { scroll-behavior: smooth; -webkit-tap-highlight-color: transparent; }
 BODY + TEXTURA TORTILLA
 ====================================================== */
 body {
-background-color: var(–cream);
-color: var(–dark);
+background-color: var(--cream);
+color: var(--dark);
 font-family: ‘Barlow’, sans-serif;
 min-height: 100vh;
 overflow-x: hidden;
@@ -54,14 +54,14 @@ padding: 48px 24px 40px; gap: 20px; text-align: center;
 }
 .logo-wrap {
 width: 150px; height: 150px; border-radius: 50%; overflow: hidden;
-box-shadow: 0 0 0 3px var(–cream), 0 0 0 6px var(–orange),
+box-shadow: 0 0 0 3px var(--cream), 0 0 0 6px var(--orange),
 0 0 0 9px rgba(224,90,26,0.25), 0 16px 48px rgba(224,90,26,0.35),
 0 4px 16px rgba(0,0,0,0.25);
 flex-shrink: 0;
 }
 .logo-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .preventa-badge {
-background: linear-gradient(135deg, var(–orange-warm), var(–orange-dark));
+background: linear-gradient(135deg, var(--orange-warm), var(--orange-dark));
 color: #fff; font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 11px; font-weight: 900; letter-spacing: 2.5px;
 padding: 8px 22px; border-radius: 50px; text-transform: uppercase;
@@ -69,12 +69,12 @@ box-shadow: 0 6px 18px rgba(224,90,26,0.4);
 }
 .hero-title {
 font-family: ‘Bebas Neue’, sans-serif;
-font-size: clamp(58px,19vw,88px); line-height: 0.87; letter-spacing: 2px; color: var(–dark);
+font-size: clamp(58px,19vw,88px); line-height: 0.87; letter-spacing: 2px; color: var(--dark);
 }
-.hero-title span { color: var(–orange); display: block; }
+.hero-title span { color: var(--orange); display: block; }
 .hero-sub {
 font-family: ‘Barlow Condensed’, sans-serif; font-size: 13px; font-weight: 800;
-letter-spacing: 4.5px; color: var(–orange); text-transform: uppercase;
+letter-spacing: 4.5px; color: var(--orange); text-transform: uppercase;
 }
 .hero-desc { font-size: 14px; color: rgba(17,3,0,0.52); font-weight: 500; line-height: 1.55; }
 .ver-menu-btn {
@@ -90,7 +90,7 @@ text-decoration: none; padding: 8px; margin-top: 4px;
 TICKER
 ====================================================== */
 .ticker-wrap {
-background: linear-gradient(90deg, var(–orange-dark) 0%, var(–orange) 50%, var(–orange-dark) 100%);
+background: linear-gradient(90deg, var(--orange-dark) 0%, var(--orange) 50%, var(--orange-dark) 100%);
 overflow: hidden; padding: 13px 0; position: sticky; top: 0; z-index: 200;
 box-shadow: 0 4px 24px rgba(184,71,14,0.45);
 }
@@ -110,18 +110,18 @@ SECTION HEADER
 .section-header { text-align: center; padding: 40px 24px 14px; }
 .section-label {
 font-family: ‘Barlow Condensed’, sans-serif; font-size: 11px; font-weight: 800;
-letter-spacing: 4.5px; color: var(–orange); text-transform: uppercase;
+letter-spacing: 4.5px; color: var(--orange); text-transform: uppercase;
 display: flex; align-items: center; justify-content: center; gap: 14px;
 }
 .section-label::before, .section-label::after {
 content: ‘’; display: block; width: 36px; height: 1.5px;
-background: linear-gradient(90deg, transparent, var(–orange)); opacity: 0.7;
+background: linear-gradient(90deg, transparent, var(--orange)); opacity: 0.7;
 }
-.section-label::after { background: linear-gradient(90deg, var(–orange), transparent); }
+.section-label::after { background: linear-gradient(90deg, var(--orange), transparent); }
 .section-title {
 font-family: ‘Bebas Neue’, sans-serif;
 font-size: clamp(44px,14vw,70px); line-height: 1;
-color: var(–dark); letter-spacing: 1.5px; margin-top: 8px;
+color: var(--dark); letter-spacing: 1.5px; margin-top: 8px;
 }
 
 /* ======================================================
@@ -132,12 +132,12 @@ display: flex; flex-direction: column; gap: 28px;
 padding: 12px 16px 36px; max-width: 520px; margin: 0 auto;
 }
 .product-card {
-border-radius: var(–radius); overflow: hidden;
-box-shadow: var(–shadow-card); background: var(–dark-card);
+border-radius: var(--radius); overflow: hidden;
+box-shadow: var(--shadow-card); background: var(--dark-card);
 border: 1px solid rgba(255,255,255,0.045);
 }
 .card-header {
-background: linear-gradient(140deg, #F06525 0%, var(–orange) 50%, #C24810 100%);
+background: linear-gradient(140deg, #F06525 0%, var(--orange) 50%, #C24810 100%);
 padding: 18px 20px 16px; position: relative; overflow: hidden;
 }
 .card-header::before {
@@ -160,7 +160,7 @@ padding: 5px 12px; border-radius: 50px; font-family: ‘Barlow Condensed’, san
 font-size: 10px; font-weight: 900; letter-spacing: 1.5px;
 text-transform: uppercase; white-space: nowrap;
 }
-.badge-top { background: #fff; color: var(–dark); box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.badge-top { background: #fff; color: var(--dark); box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
 .badge-new { background: rgba(0,0,0,0.28); color: #fff; border: 1.5px solid rgba(255,255,255,0.45); backdrop-filter: blur(4px); }
 .card-body { padding: 20px 20px 22px; }
 .card-desc { font-size: 14px; color: rgba(255,255,255,0.65); line-height: 1.6; margin-bottom: 18px; }
@@ -185,8 +185,8 @@ font-weight: 800; letter-spacing: 1.5px; color: rgba(255,255,255,0.85); text-tra
 .size-label .size-price {
 font-family: ‘Bebas Neue’, sans-serif; font-size: 20px; color: #F07030; letter-spacing: 0.5px;
 }
-.size-label.active { border-color: var(–orange); background: rgba(224,90,26,0.2); box-shadow: 0 0 0 1px rgba(224,90,26,0.4) inset, 0 4px 16px rgba(224,90,26,0.15); }
-.size-label.active .dot { border-color: var(–orange); background: var(–orange); box-shadow: 0 0 8px rgba(224,90,26,0.7); }
+.size-label.active { border-color: var(--orange); background: rgba(224,90,26,0.2); box-shadow: 0 0 0 1px rgba(224,90,26,0.4) inset, 0 4px 16px rgba(224,90,26,0.15); }
+.size-label.active .dot { border-color: var(--orange); background: var(--orange); box-shadow: 0 0 8px rgba(224,90,26,0.7); }
 .size-label.active .size-name { color: #fff; }
 
 /* Qty hint + action row */
@@ -197,7 +197,7 @@ margin-bottom: 8px; padding-left: 2px; display: flex; align-items: center; gap: 
 }
 .qty-hint::before {
 content: ‘’; display: inline-block; width: 3px; height: 3px; border-radius: 50%;
-background: var(–orange); opacity: 0.7; flex-shrink: 0;
+background: var(--orange); opacity: 0.7; flex-shrink: 0;
 }
 .action-row { display: flex; align-items: center; gap: 12px; }
 .qty-control {
@@ -218,12 +218,12 @@ font-size: 22px; color: #fff; transition: opacity 0.2s; line-height: 1;
 }
 .qty-display.zero { opacity: 0.3; }
 .add-btn {
-flex: 1; background: linear-gradient(135deg, var(–orange-warm), var(–orange));
+flex: 1; background: linear-gradient(135deg, var(--orange-warm), var(--orange));
 border: none; border-radius: 50px; color: #fff; font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 14px; font-weight: 900; letter-spacing: 2px; text-transform: uppercase;
 padding: 0 18px; height: 46px; cursor: pointer;
 display: flex; align-items: center; justify-content: center; gap: 6px;
-transition: all 0.15s; box-shadow: var(–shadow-btn); -webkit-tap-highlight-color: transparent;
+transition: all 0.15s; box-shadow: var(--shadow-btn); -webkit-tap-highlight-color: transparent;
 }
 .add-btn:active { transform: scale(0.97); box-shadow: 0 3px 10px rgba(224,90,26,0.35); }
 .add-btn:disabled { opacity: 0.45; cursor: not-allowed; box-shadow: none; }
@@ -243,11 +243,11 @@ opacity: 0; transition: opacity 0.2s; padding-left: 2px;
 INLINE CART SECTION (bottom of page)
 ====================================================== */
 .cart-outer {
-background: linear-gradient(180deg, var(–dark) 0%, #0D0200 100%);
+background: linear-gradient(180deg, var(--dark) 0%, #0D0200 100%);
 padding: 0 16px 48px; max-width: 520px; margin: 0 auto;
 }
 .cart-box {
-background: var(–dark-deep); border-radius: var(–radius); padding: 22px 20px;
+background: var(--dark-deep); border-radius: var(--radius); padding: 22px 20px;
 border: 1px solid rgba(224,90,26,0.18);
 box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.03) inset;
 }
@@ -262,7 +262,7 @@ color: rgba(255,255,255,0.5); font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
 padding: 6px 16px; border-radius: 50px; cursor: pointer; transition: all 0.15s;
 }
-.clear-btn:active { background: rgba(224,90,26,0.2); border-color: var(–orange); color: #fff; }
+.clear-btn:active { background: rgba(224,90,26,0.2); border-color: var(--orange); color: #fff; }
 .cart-items { display: flex; flex-direction: column; gap: 10px; }
 .cart-empty {
 text-align: center; padding: 28px 0; color: rgba(255,255,255,0.25);
@@ -277,7 +277,7 @@ animation: slideIn 0.28s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 .cart-item-info { flex: 1; min-width: 0; }
 .cart-item-name { font-family: ‘Barlow Condensed’, sans-serif; font-size: 15px; font-weight: 800; color: #fff; letter-spacing: 0.3px; }
 .cart-item-detail { font-size: 12.5px; color: rgba(255,255,255,0.45); margin-top: 3px; line-height: 1.4; }
-.cart-item-subtotal { font-family: ‘Bebas Neue’, sans-serif; font-size: 20px; color: var(–orange-warm); white-space: nowrap; }
+.cart-item-subtotal { font-family: ‘Bebas Neue’, sans-serif; font-size: 20px; color: var(--orange-warm); white-space: nowrap; }
 .cart-item-qty-ctrl {
 display: flex; align-items: center; background: rgba(255,255,255,0.06);
 border-radius: 50px; border: 1px solid rgba(255,255,255,0.1); flex-shrink: 0;
@@ -307,7 +307,7 @@ font-family: ‘Barlow Condensed’, sans-serif; font-size: 12px; font-weight: 7
 letter-spacing: 2px; color: rgba(255,255,255,0.4); text-transform: uppercase;
 }
 .cart-total-value { font-family: ‘Bebas Neue’, sans-serif; font-size: 26px; color: rgba(255,255,255,0.9); }
-.cart-total-value.highlight { font-size: 32px; color: var(–orange-warm); text-shadow: 0 0 20px rgba(224,90,26,0.3); }
+.cart-total-value.highlight { font-size: 32px; color: var(--orange-warm); text-shadow: 0 0 20px rgba(224,90,26,0.3); }
 .cart-hint { font-size: 12.5px; color: rgba(255,255,255,0.32); text-align: center; font-style: italic; margin-bottom: 18px; }
 
 /* Name field */
@@ -320,12 +320,12 @@ color: rgba(255,255,255,0.45); text-transform: uppercase; margin-bottom: 8px;
 .name-field-input {
 width: 100%; background: rgba(255,255,255,0.07);
 border: 1.5px solid rgba(255,255,255,0.12); border-radius: 12px;
-color: #fff; font-family: ‘Barlow’, sans-serif; font-size: 15px; font-weight: 500;
+color: #fff; font-family: ‘Barlow’, sans-serif; font-size: 16px; font-weight: 500;
 padding: 13px 16px; outline: none; transition: border-color 0.2s, background 0.2s;
 -webkit-appearance: none;
 }
 .name-field-input::placeholder { color: rgba(255,255,255,0.25); }
-.name-field-input:focus { border-color: var(–orange); background: rgba(224,90,26,0.1); }
+.name-field-input:focus { border-color: var(--orange); background: rgba(224,90,26,0.1); }
 .name-field-input.error { border-color: #FF9966; background: rgba(255,153,102,0.08); }
 
 /* Notes field */
@@ -338,17 +338,17 @@ color: rgba(255,255,255,0.45); text-transform: uppercase; margin-bottom: 8px;
 .notes-field-input {
 width: 100%; background: rgba(255,255,255,0.07);
 border: 1.5px solid rgba(255,255,255,0.12); border-radius: 12px;
-color: #fff; font-family: ‘Barlow’, sans-serif; font-size: 14px;
+color: #fff; font-family: ‘Barlow’, sans-serif; font-size: 16px;
 padding: 12px 16px; outline: none; resize: none;
 transition: border-color 0.2s, background 0.2s; -webkit-appearance: none; line-height: 1.5;
 }
 .notes-field-input::placeholder { color: rgba(255,255,255,0.25); }
-.notes-field-input:focus { border-color: var(–orange); background: rgba(224,90,26,0.08); }
+.notes-field-input:focus { border-color: var(--orange); background: rgba(224,90,26,0.08); }
 
 /* Send button */
 .send-btn {
 width: 100%;
-background: linear-gradient(135deg, var(–orange-warm) 0%, var(–orange) 60%, var(–orange-dark) 100%);
+background: linear-gradient(135deg, var(--orange-warm) 0%, var(--orange) 60%, var(--orange-dark) 100%);
 border: none; border-radius: 50px; color: #fff; font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 15px; font-weight: 900; letter-spacing: 2.5px; text-transform: uppercase;
 padding: 0 24px; height: 58px; cursor: pointer;
@@ -365,16 +365,13 @@ min-height: 20px; opacity: 0; transition: opacity 0.2s;
 }
 .cart-error.visible { opacity: 1; }
 
-/* Name/error field */
-.name-field-wrap { margin-bottom: 16px; }
-
 /* ======================================================
 FLOATING CART FAB
 ====================================================== */
 #cart-fab {
 position: fixed; bottom: 24px; right: 20px; z-index: 500;
 width: 60px; height: 60px; border-radius: 50%;
-background: linear-gradient(135deg, var(–orange-warm), var(–orange-dark));
+background: linear-gradient(135deg, var(--orange-warm), var(--orange-dark));
 border: none; box-shadow: 0 8px 28px rgba(184,71,14,0.6), 0 2px 8px rgba(0,0,0,0.3);
 cursor: pointer; display: flex; align-items: center; justify-content: center;
 font-size: 26px; transition: transform 0.2s, box-shadow 0.2s;
@@ -385,7 +382,7 @@ font-size: 26px; transition: transform 0.2s, box-shadow 0.2s;
 @keyframes fabPop { 0%{transform:scale(1)} 40%{transform:scale(1.18)} 70%{transform:scale(0.95)} 100%{transform:scale(1)} }
 #fab-count {
 position: absolute; top: -2px; right: -2px;
-background: #fff; color: var(–orange-dark);
+background: #fff; color: var(--orange-dark);
 font-family: ‘Bebas Neue’, sans-serif; font-size: 14px; line-height: 1;
 min-width: 22px; height: 22px; border-radius: 50%;
 display: none; align-items: center; justify-content: center;
@@ -405,7 +402,7 @@ opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s;
 #cart-drawer {
 position: fixed; bottom: 0; left: 0; right: 0; z-index: 601;
 max-width: 520px; margin: 0 auto;
-background: var(–dark-deep); border-radius: 24px 24px 0 0;
+background: var(--dark-deep); border-radius: 24px 24px 0 0;
 border-top: 1px solid rgba(224,90,26,0.2);
 box-shadow: 0 -24px 64px rgba(0,0,0,0.6);
 transform: translateY(100%); transition: transform 0.35s cubic-bezier(0.32,0,0.67,0);
@@ -449,7 +446,7 @@ color: rgba(255,255,255,0.45); font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase;
 padding: 5px 14px; border-radius: 50px; cursor: pointer; transition: all 0.15s;
 }
-.drawer-clear-btn:active { border-color: var(–orange); color: #fff; }
+.drawer-clear-btn:active { border-color: var(--orange); color: #fff; }
 
 /* ======================================================
 TOAST NOTIFICATIONS
@@ -460,7 +457,7 @@ z-index: 800; display: flex; flex-direction: column; align-items: center; gap: 8
 pointer-events: none; width: 90%; max-width: 340px;
 }
 .toast {
-background: var(–dark-card); color: #fff; border-radius: 50px;
+background: var(--dark-card); color: #fff; border-radius: 50px;
 padding: 11px 20px; font-family: ‘Barlow Condensed’, sans-serif;
 font-size: 14px; font-weight: 700; letter-spacing: 1px;
 border: 1px solid rgba(255,255,255,0.1);
@@ -477,18 +474,18 @@ white-space: nowrap;
 FOOTER
 ====================================================== */
 footer {
-background: var(–dark); text-align: center; padding: 36px 24px 44px;
+background: var(--dark); text-align: center; padding: 36px 24px 44px;
 border-top: 1px solid rgba(255,255,255,0.04);
 }
 .footer-logo { font-family: ‘Bebas Neue’, sans-serif; font-size: 30px; color: #fff; letter-spacing: 1.5px; }
 .footer-sub {
 font-family: ‘Barlow Condensed’, sans-serif; font-size: 11px; font-weight: 800;
-letter-spacing: 3.5px; color: var(–orange); text-transform: uppercase; margin: 4px 0 16px;
+letter-spacing: 3.5px; color: var(--orange); text-transform: uppercase; margin: 4px 0 16px;
 }
 .footer-location { font-size: 13px; color: rgba(255,255,255,0.35); margin-bottom: 4px; }
 .footer-divider { width: 36px; height: 1px; background: rgba(255,255,255,0.1); margin: 14px auto; }
 .footer-ig {
-display: inline-flex; align-items: center; gap: 7px; color: var(–orange);
+display: inline-flex; align-items: center; gap: 7px; color: var(--orange);
 font-family: ‘Barlow Condensed’, sans-serif; font-size: 16px; font-weight: 700;
 letter-spacing: 1px; text-decoration: none;
 }
@@ -1075,6 +1072,10 @@ letter-spacing: 1px; text-decoration: none;
     if (notas) msg += '\nNotas: ' + notas;
     msg += '\n\nGracias.';
 
+    pedido = [];
+    saveCart();
+    renderCart();
+    showToast('\u00A1Pedido enviado! Abre WhatsApp para confirmar.', 'success');
     window.location.href = 'https://wa.me/526623866834?text=' + encodeURIComponent(msg);
   }
 
